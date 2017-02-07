@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Train an Auxiliary Classifier Generative Adversarial Network (ACGAN) on the
-MNIST dataset. See https://arxiv.org/abs/1610.09585 for more details.
+Train an Wasserstein Auxiliary Classifier Generative Adversarial Network (WACGAN) on the MNIST dataset. 
+See https://arxiv.org/abs/1610.09585 for more details about ACGAN. 
+See https://arxiv.org/abs/1701.07875 for more details about WACGAN.
 
-You should start to see reasonable images after ~5 epochs, and good images
-by ~15 epochs. You should use a GPU, as the convolution-heavy operations are
-very slow on the CPU. Prefer the TensorFlow backend if you plan on iterating, as
-the compilation time can be a blocker using Theano.
+You should start to see reasonable images after ~3 epochs. 
+You should use a GPU, as the convolution-heavy operations are very slow on the CPU. 
+Prefer the TensorFlow backend if you plan on iterating, as the compilation time can be a blocker using Theano.
 
 Timings:
 
@@ -17,8 +17,9 @@ Hardware           | Backend | Time / Epoch
  Titan X (maxwell) | TF      | 4 min
  Titan X (maxwell) | TH      | 7 min
 
-Consult https://github.com/lukedeo/keras-acgan for more information and
+Consult https://github.com/bobchennan/Wasserstein-GAN-Keras for more information and
 example output
+The original ACGAN implementation can be found in https://github.com/lukedeo/keras-acgan
 More tricks to train GAN can be found in https://github.com/soumith/ganhacks
 """
 from __future__ import print_function
