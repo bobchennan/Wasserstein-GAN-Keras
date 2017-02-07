@@ -6,6 +6,7 @@ See https://arxiv.org/abs/1610.09585 for more details about ACGAN.
 See https://arxiv.org/abs/1701.07875 for more details about WACGAN.
 
 You should start to see reasonable images after ~3 epochs. 
+According to the paper, the performance is highly related to the discriminator loss.
 You should use a GPU, as the convolution-heavy operations are very slow on the CPU. 
 Prefer the TensorFlow backend if you plan on iterating, as the compilation time can be a blocker using Theano.
 
